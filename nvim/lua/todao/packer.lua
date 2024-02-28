@@ -20,6 +20,13 @@ return require('packer').startup(function(use)
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
 
+    use('github/copilot.vim')
+
+    use {
+        'mg979/vim-visual-multi', 
+		branch = 'master',
+    }
+
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v1.x',
