@@ -112,12 +112,12 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: Shell"
 set $ws2 "2: Work"
-set $ws3 "3: GPB"
-set $ws4 "4: GPWs"
-set $ws5 "5: Soc"
+set $ws3 "3: Meet"
+set $ws4 "4"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8: Calls"
+set $ws8 "8: Personal"
 set $ws9 "9: Slack"
 set $ws10 "10: Spotify"
 
@@ -218,7 +218,7 @@ exec_always feh --bg-scale /home/cobli/Pictures/uhUx4m.jpg
 set $2mleft xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x463 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off
 set $2mright xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x545 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off
 set $no2m xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off
-exec_always $no2m
+exec_always $2mleft
 
 # Move focused workspace between monitors
 bindsym $mod+shift+greater move workspace to output right
