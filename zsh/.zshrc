@@ -98,11 +98,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias bt="~/bluetooth.sh"
+alias vpn="~/vpn.sh"
+alias aws_login="~/aws_login.sh"
+
 export AWS_PROFILE=cobli-tech
 export JAVA_HOME="/usr/lib/jvm/java-1.11.0-openjdk-amd64"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
 export PATH=$JAVA_HOME/bin:$PATH
 
 eval "$(starship init zsh)"
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
