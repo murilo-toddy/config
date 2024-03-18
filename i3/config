@@ -212,13 +212,10 @@ exec spotify
 exec_always xset r rate 300 50
 
 # Wallpaper
-exec_always feh --bg-scale /home/cobli/Pictures/uhUx4m.jpg
+exec_always feh --bg-scale /home/murilo-toddy/Pictures/wallpaper.jpg
 
-# Two monitors configuration
-set $2mleft xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x463 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off
-set $2mright xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x545 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --off
-set $no2m xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off
-exec_always $2mleft
+set $desktop2m xrandr --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-5 --off
+exec_always $desktop2m
 
 # Move focused workspace between monitors
 bindsym $mod+shift+greater move workspace to output right

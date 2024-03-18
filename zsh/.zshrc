@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.config/zsh/ohmyzsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -102,6 +102,8 @@ alias bt="~/bluetooth.sh"
 alias vpn="~/vpn.sh"
 alias aws_login="~/aws_login.sh"
 
+alias aws-login="rm -rf ~/.aws/credentials && ~/work/setup/dev-setup/aws-login.sh && export AWS_PROFILE=cobli-tech"
+alias vpn="~/vpn.sh"
 export AWS_PROFILE=cobli-tech
 export JAVA_HOME="/usr/lib/jvm/java-1.11.0-openjdk-amd64"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
@@ -110,7 +112,6 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$JAVA_HOME/bin:$PATH
 
 eval "$(starship init zsh)"
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

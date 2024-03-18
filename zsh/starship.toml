@@ -67,7 +67,6 @@ $cmd_duration\
 
 $fill\
 
-$battery\
 $time
 $character\
 """
@@ -87,10 +86,6 @@ format = " took [$duration]($style) "
 
 [battery]
 format = "[$percentage]($style) "
-
-[[battery.display]]
-threshold = 30
-style = "bold red"
 
 [time]
 disabled = false

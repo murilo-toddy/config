@@ -1,4 +1,4 @@
-function ColorMyPencils(color)
+function ColorMyPencils(color) 
     require('rose-pine').setup({
         variant = "main", -- auto, main, moon, or dawn
         dark_variant = "main", -- main, moon, or dawn
@@ -89,7 +89,7 @@ function ColorMyPencils(color)
         end,
     })
 
-color = color or "rose-pine"
+	color = color or "rose-pine"
     vim.cmd.colorscheme(color)
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
